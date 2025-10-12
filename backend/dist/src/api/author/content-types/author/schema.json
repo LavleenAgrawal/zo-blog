@@ -1,0 +1,30 @@
+{
+    "kind": "collectionType",
+    "collectionName": "authors",
+    "info": {
+        "singularName": "author",
+        "pluralName": "authors",
+        "displayName": "Author"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "author_name": {
+            "type": "string"
+        },
+        "blog_posts": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::blog-post.blog-post",
+            "mappedBy": "author"
+        },
+        "about": {
+            "type": "text"
+        },
+        "designation": {
+            "type": "string"
+        }
+    }
+}

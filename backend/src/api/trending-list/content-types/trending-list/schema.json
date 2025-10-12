@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trending_lists",
+  "info": {
+    "singularName": "trending-list",
+    "pluralName": "trending-lists",
+    "displayName": "Trending List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "trending": {
+      "type": "string"
+    }
+  }
+}
